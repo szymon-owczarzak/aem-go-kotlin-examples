@@ -1,5 +1,7 @@
 .gradle
 /build/
+.idea
+!.idea/runConfigurations/Build_and_Deploy.xml
 
 # Ignore Gradle GUI config
 gradle-app.setting
