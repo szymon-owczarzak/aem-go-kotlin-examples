@@ -12,6 +12,16 @@ import javax.servlet.Servlet
 
 /**
  * @link http://host:port/bin/kotlin/hello
+ *
+ * Other Sling Servlet properties:
+ *
+ *   sling.servlet.extensions=
+ *   sling.servlet.selectors=
+ *   sling.servlet.resourceTypes=
+ *   sling.servlet.methods=
+ *   sling.servlet.prefix=
+ *
+ *   More: https://sling.apache.org/documentation/the-sling-engine/servlets.html
  */
 @Component(
   service = arrayOf(Servlet::class),

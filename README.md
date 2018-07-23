@@ -15,10 +15,10 @@ or use provided `Build and Deploy` build for IntelliJ IDE
 1. `SimpleService` 
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/SimpleService.java) 
 |
-[Kotlin](/src/main/java/com/szokone/aem/gokotlin/kotlin/service/SimpleService.kt)
+[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/SimpleService.kt)
 OSGi component and service with static final field (companion object).
 2. `SimpleServlet`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/SimpleSerlet.java) 
 |
-[Kotlin](/src/main/java/com/szokone/aem/gokotlin/kotlin/service/SimpleServlet.kt)
+[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/SimpleServlet.kt)
 OSGi component and sling Servlet with dependency injection to another service.

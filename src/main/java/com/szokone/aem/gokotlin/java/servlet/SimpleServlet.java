@@ -18,6 +18,13 @@ import org.osgi.service.component.annotations.Reference;
  *
  * Other Sling Servlet properties:
  *
+ *   sling.servlet.extensions=
+ *   sling.servlet.selectors=
+ *   sling.servlet.resourceTypes=
+ *   sling.servlet.methods=
+ *   sling.servlet.prefix=
+ *
+ *   More: https://sling.apache.org/documentation/the-sling-engine/servlets.html
  */
 @Component(
   service = Servlet.class,
