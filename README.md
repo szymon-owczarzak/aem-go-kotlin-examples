@@ -2,7 +2,8 @@
 
 ![logo](./src/resources/logo.png)
 
-In this example project you can compare Java and Kotlin implementations of common interfaces that are used when developing AEM based projects.
+This project will help you learn Kotlin programming language. 
+You will find examples of common AEM developer tasks all written in both Java and Kotlin.
 
 ### If you like to run it just type
 
