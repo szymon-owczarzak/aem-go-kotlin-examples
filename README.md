@@ -34,3 +34,5 @@ OSGi service interface definition.
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/impl/ConfigurableServiceImpl.kt)
 OSGi component that can be configured in `Adobe Experience Manager Web Console Configuration`.
 Use of `@ObjectClassDefinition`, `@AttributeDefinition` and service implementation.
+
+##### Project structure generated from [gradle-aem-single](https://github.com/Cognifide/gradle-aem-single) with help from [gradle-fork-plugin](https://github.com/neva-dev/gradle-fork-plugin)

@@ -1,5 +1,7 @@
 package com.szokone.aem.gokotlin.java.service;
 
+import java.util.Map;
+
 /**
  * Service Interface
  */
@@ -11,12 +13,8 @@ public interface ConfigurableService {
     boolean isEnabled();
 
     /**
-     * @return list of HTML tags that should be decorated with additional classes
+     * @return map of text in component to replace
      */
-    String[] getDecorableHtmlTags();
+    Map<String, String> getReplacements();
 
-    /**
-     * @return additional classes that will be added to 'decorableHtmlTags'
-     */
-    String getAdditionalClasses();
 }

@@ -6,6 +6,10 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Modified;
 import org.osgi.service.metatype.annotations.Designate;
 
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 /**
  * OSGi Component implementing some Service interface with configuration that can be changed in:
  * http://localhost:4502/system/console/configMgr
@@ -21,27 +25,26 @@ public class ConfigurableServiceImpl implements ConfigurableService {
 
     private boolean enabled;
 
-    private String[] decorableHtmlTags;
-
-    private String additionalClasses;
+    private Map<String, String> replacements;
 
     @Activate
     @Modified
     protected void activate(final ConfigurableServiceDefinition config) {
-        this.decorableHtmlTags = config.decorableHtmlTags();
         this.enabled = config.enabled();
-        this.additionalClasses = config.additionalClasses();
+        this.replacements = Stream.of(config.replacements())
+                .map(it -> it.split(":"))
+                .filter(it -> it.length == 2)
+                .collect(Collectors.toMap(it -> it[0], it -> it[1]));
     }
 
+    @Override
     public boolean isEnabled() {
         return enabled;
     }
 
-    public String[] getDecorableHtmlTags() {
-        return decorableHtmlTags;
+    @Override
+    public Map<String, String> getReplacements() {
+        return replacements;
     }
 
-    public String getAdditionalClasses() {
-        return additionalClasses;
-    }
 }

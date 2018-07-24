@@ -16,15 +16,9 @@ public @interface ConfigurableServiceDefinition {
     boolean enabled() default false;
 
     @AttributeDefinition(
-            name = "HTML tags to be decorated",
-            description = "Optional field description here"
+            name = "Text to be replaced",
+            description = "Example: foo:bar all foo will be replaced with bar"
     )
-    String[] decorableHtmlTags() default {"div", "image"};
-
-    @AttributeDefinition(
-            name = "HTML tags to be decorated",
-            description = "Optional field description here"
-    )
-    String additionalClasses() default "java-decorator";
+    String[] replacements() default {"foo:bar"};
 
 }

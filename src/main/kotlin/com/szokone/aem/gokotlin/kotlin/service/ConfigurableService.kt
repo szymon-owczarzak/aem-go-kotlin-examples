@@ -11,12 +11,8 @@ interface ConfigurableService {
     fun isEnabled(): Boolean
 
     /**
-     * @return list of HTML tags that should be decorated with additional classes
+     * @return map of text in component to replace
      */
-    fun getDecorableHtmlTags(): Array<String>
+    fun getReplacements(): Map<String, String>
 
-    /**
-     * @return additional classes that will be added to 'decorableHtmlTags'
-     */
-    fun getAdditionalClasses(): String
 }

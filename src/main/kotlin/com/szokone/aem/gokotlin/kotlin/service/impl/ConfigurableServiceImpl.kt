@@ -32,14 +32,9 @@ class ConfigurableServiceImpl : ConfigurableService {
             ) val enabled: Boolean = false,
 
             @get:AttributeDefinition(
-                    name = "HTML tags to be decorated",
-                    description = "Optional field description here"
-            ) val decorableHtmlTags: Array<String> = arrayOf("div", "image"),
-
-            @get:AttributeDefinition(
-                    name = "HTML tags to be decorated",
-                    description = "Optional field description here"
-            ) val additionalClasses: String = "kotlin-decorator"
+                    name = "Text to be replaced",
+                    description = "Example: boo:far all boo will be replaced with far"
+            ) val replacements: Array<String> = arrayOf("boo:far")
     )
 
     private lateinit var config: Config
@@ -52,7 +47,11 @@ class ConfigurableServiceImpl : ConfigurableService {
 
     override fun isEnabled() = config.enabled
 
-    override fun getDecorableHtmlTags() = config.decorableHtmlTags
+    override fun getReplacements(): Map<String, String> {
+        return config.replacements.toList()
+                .map { it -> it.split(":") }
+                .filter { it -> it.size == 2 }
+                .associateBy({it[0]}, {it[1]})
+    }
 
-    override fun getAdditionalClasses() = config.additionalClasses
 }
