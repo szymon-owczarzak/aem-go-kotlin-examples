@@ -24,17 +24,17 @@ import javax.servlet.Servlet
  *   More: https://sling.apache.org/documentation/the-sling-engine/servlets.html
  */
 @Component(
-  service = arrayOf(Servlet::class),
-  property = arrayOf("sling.servlet.paths=/bin/kotlin/hello")
+        service = arrayOf(Servlet::class),
+        property = arrayOf("sling.servlet.paths=/bin/kotlin/hello")
 )
 class SimpleServlet : SlingAllMethodsServlet() {
 
-  @Reference
-  lateinit var simpleService: SimpleService
+    @Reference
+    lateinit var simpleService: SimpleService
 
-  override fun doGet(request: SlingHttpServletRequest, response: SlingHttpServletResponse) {
+    override fun doGet(request: SlingHttpServletRequest, response: SlingHttpServletResponse) {
 
-    response.contentType = MediaType.JSON_UTF_8.toString()
-    response.writer.write(simpleService.toJson(ImmutableMap.of("message", "Hello from Kotlin World!")))
-  }
+        response.contentType = MediaType.JSON_UTF_8.toString()
+        response.writer.write(simpleService.toJson(ImmutableMap.of("message", "Hello from Kotlin World!")))
+    }
 }

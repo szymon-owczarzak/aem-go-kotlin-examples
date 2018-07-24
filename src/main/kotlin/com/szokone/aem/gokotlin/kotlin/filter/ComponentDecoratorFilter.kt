@@ -28,7 +28,7 @@ class ComponentDecoratorFilter : Filter {
         val req = request as SlingHttpServletRequest
         val res = response as SlingHttpServletResponse
 
-        if (service.isEnabled()&& StringUtils.startsWith(req.resource.path, "/content/experience-fragments/go-kotlin")) {
+        if (service.isEnabled() && StringUtils.startsWith(req.resource.path, "/content/experience-fragments/go-kotlin")) {
             ComponentDecoratorProcessor(req, res, chain, service).process()
         } else {
             chain?.doFilter(request, response)

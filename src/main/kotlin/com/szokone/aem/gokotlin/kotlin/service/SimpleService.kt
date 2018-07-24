@@ -7,17 +7,17 @@ import org.osgi.service.component.annotations.Component
  * Simple OSGi Component and Service
  */
 @Component(
-  service = arrayOf(SimpleService::class)
+        service = arrayOf(SimpleService::class)
 )
 class SimpleService {
 
-  companion object {
-    val GSON = GsonBuilder()
-      .disableHtmlEscaping()
-      .serializeNulls()
-      .setPrettyPrinting()
-      .create()
-  }
+    companion object {
+        val GSON = GsonBuilder()
+                .disableHtmlEscaping()
+                .serializeNulls()
+                .setPrettyPrinting()
+                .create()
+    }
 
-  fun toJson(data: Map<String, String>): String = GSON.toJson(data)
+    fun toJson(data: Map<String, String>): String = GSON.toJson(data)
 }

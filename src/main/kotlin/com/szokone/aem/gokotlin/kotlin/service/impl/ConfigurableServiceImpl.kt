@@ -51,7 +51,7 @@ class ConfigurableServiceImpl : ConfigurableService {
         return config.replacements.toList()
                 .map { it -> it.split(":") }
                 .filter { it -> it.size == 2 }
-                .associateBy({it[0]}, {it[1]})
+                .associateBy({ it[0] }, { it[1] })
     }
 
 }
