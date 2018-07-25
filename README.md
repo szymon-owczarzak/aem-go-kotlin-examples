@@ -36,22 +36,34 @@ Service `interface` definition.
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/impl/ConfigurableServiceImpl.java) 
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/impl/ConfigurableServiceImpl.kt)  
-OSGi component that can be configured in `Adobe Experience Manager Web Console Configuration`.
-Use of `@ObjectClassDefinition`, `@AttributeDefinition` and service implementation.
-Here you can compare how to transform `Array` to `Map` with `Stream API` in Java and `Closures` in Kotlin.
+OSGi component that can be configured in `Adobe Experience Manager Web Console Configuration`.  
+Use of `@ObjectClassDefinition`, `@AttributeDefinition` and service implementation.  
+Compare how to transform `Array` to `Map` with `Stream API` in Java and `Closures` in Kotlin.
 
 5. `ComponentDecoratorFilter`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/filter/ComponentDecoratorFilter.java) 
 |
-[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/filter/ComponentDecoratorFilter.kt)  
-OSGi component and implementation of `javax.servlet.Filter`
+[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/filter/ComponentDecoratorFilter.kt)  
+OSGi component and basic implementation of `javax.servlet.Filter`
 
 6. `ComponentDecoratorProcessor`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/filter/ComponentDecoratorProcessor.java) 
 |
-[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/filter/ComponentDecoratorProcessor.kt)  
+[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/filter/ComponentDecoratorProcessor.kt)  
 Class used by ComponentDecoratorFilter to replace markup text with some other text. 
-Here you can compare how `final fields` are defined, `casting`, `elvis operator`.
+Compare how `final fields` are defined, `casting`.  
+Meet `elvis operator` and `fields definition directly in constructor` when writing in Kotlin.
+
+7. `SampleModel`
+[Java](/src/main/java/com/szokone/aem/gokotlin/java/model/SampleModel.java) 
+|
+[Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/model/SampleModel.kt)  
+Simple `Sling Model` with property and service `injection`. Learn how to inject primitive types in Kotlin.
+
+8. `Sample Component`
+[path](src/main/content/jcr_root/apps/aem-go-kotlin-examples/components/sample)  
+Sample Component with Touch UI config dialog. 
+Add selectors `java` or `kotlin` to switch from `JSP` to HTL with different model implementations.
 
 ##### Developed and tested on `AEM 6.4`
 
