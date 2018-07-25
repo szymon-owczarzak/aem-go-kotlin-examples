@@ -1,0 +1,12 @@
+<sly data-sly-use.model="com.szokone.aem.gokotlin.java.model.SampleModel"/>
+
+<h4>This is HTL rendering script with Java based sling model.</h4>
+<div>
+    Text Field: ${model.textfield}
+</div>
+<div>
+    Number Field: ${model.numberfield}
+</div>
+<div data-sly-test="${model.checkbox}">
+    Calculated value: ${model.calculatedValue}
+</div>
