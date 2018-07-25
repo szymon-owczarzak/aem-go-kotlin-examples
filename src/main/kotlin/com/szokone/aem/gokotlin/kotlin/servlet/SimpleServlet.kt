@@ -11,6 +11,8 @@ import org.osgi.service.component.annotations.Reference
 import javax.servlet.Servlet
 
 /**
+ * OSGi component registered as Sling Servlet
+ *
  * @link http://host:port/bin/kotlin/hello
  *
  * Other Sling Servlet properties:

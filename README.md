@@ -15,7 +15,7 @@ If you like to run it just type `./gradlew` from root folder or use provided `Bu
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/SimpleService.java) 
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/SimpleService.kt)  
-OSGi `@Component` and `@Service` (all in one class) with (`static final field` in Java / `companion object` - in Kotlin).
+OSGi `@Component` and `Service` (all in one class) with (`static final field` in Java / `companion object` - in Kotlin).
 
 2. `SimpleServlet`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/servlet/SimpleServlet.java) 
@@ -63,7 +63,7 @@ Simple `Sling Model` with property and service `injection`. Learn how to inject 
 8. `Sample Component`
 [path](src/main/content/jcr_root/apps/aem-go-kotlin-examples/components/sample)  
 Sample Component with Touch UI config dialog. 
-Add selectors `java` or `kotlin` to switch from `JSP` to HTL with different model implementations.
+Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations.
 
 ##### Developed and tested on `AEM 6.4`
 

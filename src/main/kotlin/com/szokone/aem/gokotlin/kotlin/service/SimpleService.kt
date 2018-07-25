@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder
 import org.osgi.service.component.annotations.Component
 
 /**
- * Simple OSGi Component and Service
+ * Simple OSGi Component registered as Service
  */
 @Component(
         service = arrayOf(SimpleService::class)

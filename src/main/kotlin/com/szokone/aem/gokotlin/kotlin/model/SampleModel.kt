@@ -11,8 +11,11 @@ import javax.inject.Named
 @Model(adaptables = arrayOf(Resource::class), defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 class SampleModel {
 
-    @Inject lateinit var textfield: String
+    // NOTE: Use this approach when injecting objects like String...
+    @Inject
+    lateinit var textfield: String
 
+    // NOTE: Use this approach when injecting primitives like Long, Boolean...
     @JvmField
     @field:[Inject Named("numberfield")]
     var numberfield: Long = 0
@@ -23,10 +26,11 @@ class SampleModel {
 
     lateinit var calculatedValue: String
 
-    @Inject lateinit var service: ConfigurableService
+    @Inject
+    lateinit var service: ConfigurableService
 
     @PostConstruct
-    fun init(): Unit {
+    fun init() {
         calculatedValue = "${service.getReplacements()} | ${textfield} | ${numberfield} | ${checkbox}"
     }
 }

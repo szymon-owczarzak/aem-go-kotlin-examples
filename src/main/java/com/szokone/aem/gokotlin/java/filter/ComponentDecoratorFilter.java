@@ -31,6 +31,8 @@ public class ComponentDecoratorFilter implements Filter {
         SlingHttpServletRequest req = (SlingHttpServletRequest) request;
         SlingHttpServletResponse res = (SlingHttpServletResponse) response;
 
+        // NOTE: in real-life project make sure that your decorator touches only places that it should
+        // be aware of the performance drop when badly implemented use resource type as a filter
         if (service.isEnabled() && StringUtils.startsWith(req.getResource().getPath(), "/content/experience-fragments/go-kotlin")) {
             new ComponentDecoratorProcessor(req, res, chain, service).process();
         } else {
@@ -45,6 +47,6 @@ public class ComponentDecoratorFilter implements Filter {
 
     @Override
     public void destroy() {
-        // nothing to destroy
+        // Searching, Seek and destroy
     }
 }

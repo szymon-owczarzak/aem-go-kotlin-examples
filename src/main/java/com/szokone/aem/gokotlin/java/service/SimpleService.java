@@ -7,7 +7,7 @@ import org.osgi.service.component.annotations.Component;
 import java.util.Map;
 
 /**
- * Simple OSGi Component and Service
+ * Simple OSGi Component registered as Service
  */
 @Component(
         service = SimpleService.class

@@ -10,6 +10,7 @@ import java.io.PrintWriter
 import java.io.StringWriter
 import javax.servlet.FilterChain
 
+// NOTE: In Kotlin you can create class variables directly in default constructor
 class ComponentDecoratorProcessor(private val request: SlingHttpServletRequest,
                                   private val response: SlingHttpServletResponse,
                                   private val chain: FilterChain?,

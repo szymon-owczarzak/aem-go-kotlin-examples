@@ -14,6 +14,8 @@ import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
 /**
+ * OSGi component registered as Sling Servlet
+ *
  * @link http://[host]:[port]/bin/java/hello
  * <p>
  * Other Sling Servlet properties:
