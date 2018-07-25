@@ -16,16 +16,19 @@ If you like to run it just type `./gradlew` from root folder or use provided `Bu
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/SimpleService.kt)  
 OSGi `@Component` and `@Service` (all in one class) with (`static final field` in Java / `companion object` - in Kotlin).
+
 2. `SimpleServlet`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/servlet/SimpleServlet.java) 
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/servlet/SimpleServlet.kt)  
 OSGi `@Component` and `Sling Servlet` with `dependency injection` to another service.
+
 3. `ConfigurableService`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/ConfigurableService.java) 
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/ConfigurableService.kt)  
 Service `interface` definition.
+
 4. `ConfigurableServiceImpl`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/impl/ConfigurableServiceImpl.java) 
 |
@@ -33,11 +36,13 @@ Service `interface` definition.
 OSGi component that can be configured in `Adobe Experience Manager Web Console Configuration`.
 Use of `@ObjectClassDefinition`, `@AttributeDefinition` and service implementation.
 Here you can compare how to transform `Array` to `Map` with `Stream API` in Java and `Closures` in Kotlin.
+
 5. `ComponentDecoratorFilter`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/filter/ComponentDecoratorFilter.java) 
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/service/filter/ComponentDecoratorFilter.kt)  
 OSGi component and implementation of `javax.servlet.Filter`
+
 6. `ComponentDecoratorProcessor`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/filter/ComponentDecoratorProcessor.java) 
 |
