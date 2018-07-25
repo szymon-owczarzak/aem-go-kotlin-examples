@@ -10,7 +10,6 @@ import com.szokone.aem.gokotlin.java.service.SimpleService;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
-import org.jetbrains.annotations.NotNull;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -39,7 +38,7 @@ public class SimpleServlet extends SlingAllMethodsServlet {
     private SimpleService simpleService;
 
     @Override
-    protected void doGet(@NotNull SlingHttpServletRequest request, @NotNull SlingHttpServletResponse response) throws IOException {
+    protected void doGet(SlingHttpServletRequest request, SlingHttpServletResponse response) throws IOException {
 
         response.setContentType(MediaType.JSON_UTF_8.toString());
         response.getWriter().write(simpleService.toJson(ImmutableMap.of("message", "Hello from Java World!")));
