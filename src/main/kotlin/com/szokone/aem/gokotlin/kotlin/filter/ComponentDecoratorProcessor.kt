@@ -10,18 +10,10 @@ import java.io.PrintWriter
 import java.io.StringWriter
 import javax.servlet.FilterChain
 
-class ComponentDecoratorProcessor(request: SlingHttpServletRequest,
-                                  response: SlingHttpServletResponse,
-                                  chain: FilterChain?,
-                                  service: ConfigurableService) : SlingHttpServletResponseWrapper(response) {
-
-    private val request: SlingHttpServletRequest = request
-
-    private val response: SlingHttpServletResponse = response
-
-    private val chain: FilterChain? = chain
-
-    private val service: ConfigurableService = service
+class ComponentDecoratorProcessor(private val request: SlingHttpServletRequest,
+                                  private val response: SlingHttpServletResponse,
+                                  private val chain: FilterChain?,
+                                  private val service: ConfigurableService) : SlingHttpServletResponseWrapper(response) {
 
     private var sw: StringWriter? = null
 
