@@ -21,7 +21,10 @@ OSGi `@Component` and `@Service` (all in one class) with (`static final field` i
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/servlet/SimpleServlet.java) 
 |
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/servlet/SimpleServlet.kt)  
-OSGi `@Component` and `Sling Servlet` with `dependency injection` to another service.
+OSGi `@Component` and `Sling Servlet` with `dependency injection` to another service.  
+You can test both servlets on:  
+`http://localhost:4502/bin/java/hello`  
+`http://localhost:4502/bin/kotlin/hello`
 
 3. `ConfigurableService`
 [Java](/src/main/java/com/szokone/aem/gokotlin/java/service/ConfigurableService.java) 
