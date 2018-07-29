@@ -9,7 +9,9 @@ import javax.servlet.Servlet;
 import com.szokone.aem.gokotlin.java.service.SimpleService;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
+import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
+import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -34,6 +36,11 @@ import org.osgi.service.component.annotations.Reference;
                 "sling.servlet.paths=/bin/java/hello"
         }
 )
+/*
+  When using `org.apache.felix.scr.annotations` Felix SCR equivalent:
+
+  @SlingServlet( paths = "/bin/java/hello" )
+ */
 public class SimpleServlet extends SlingAllMethodsServlet {
 
     @Reference

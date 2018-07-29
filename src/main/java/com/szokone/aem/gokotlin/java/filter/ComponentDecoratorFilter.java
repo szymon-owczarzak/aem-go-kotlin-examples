@@ -21,6 +21,14 @@ import java.io.IOException;
                 Constants.SERVICE_RANKING + ":Integer=" + (Integer.MAX_VALUE - 1)
         }
 )
+/*
+  When using `org.apache.felix.scr.annotations` you can use Felix SCR equivalent:
+
+  @SlingFilter(
+        scope = SlingFilterScope.COMPONENT,
+        order = Integer.MAX_VALUE - 1
+  )
+*/
 public class ComponentDecoratorFilter implements Filter {
 
     @Reference

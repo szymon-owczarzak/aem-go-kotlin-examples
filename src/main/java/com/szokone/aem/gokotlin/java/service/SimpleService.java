@@ -12,6 +12,12 @@ import java.util.Map;
 @Component(
         service = SimpleService.class
 )
+/*
+  When using `org.apache.felix.scr.annotations` you can use Felix SCR equivalent:
+
+  @Component
+  @Service(value = SimpleService.class)
+ */
 public class SimpleService {
 
     private static final Gson GSON = new GsonBuilder()

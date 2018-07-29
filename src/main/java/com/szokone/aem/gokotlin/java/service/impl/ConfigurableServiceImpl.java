@@ -21,6 +21,10 @@ import java.util.stream.Stream;
 @Designate(
         ocd = ConfigurableServiceDefinition.class
 )
+/*
+  Creating configurable service with `org.apache.felix.scr.annotations` is much different than `org.osgi` approach.
+  Examples can be found in Internet: https://www.google.pl/search?q=felix+scr+configurable+service
+ */
 public class ConfigurableServiceImpl implements ConfigurableService {
 
     private boolean enabled;
