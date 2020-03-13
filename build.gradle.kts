@@ -40,13 +40,13 @@ aem {
     instance {
         satisfier {
             packages {
-                "my-bundle"("org.jetbrains.kotlin:kotlin-osgi-bundle:1.2.51")
+                "my-bundle"("org.jetbrains.kotlin:kotlin-osgi-bundle:1.3.70")
             }
         }
     }
 
     tasks.bundleCompose {
-
+        exportPackage("com.szokone.aem.gokotlin.java.service", "com.szokone.aem.gokotlin.kotlin.service")
         category = "szokone"
         vendor = "szokone"
         bnd("-plugin org.apache.sling.caconfig.bndplugin.ConfigurationClassScannerPlugin")
