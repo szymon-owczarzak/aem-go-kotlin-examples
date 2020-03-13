@@ -32,7 +32,6 @@ dependencies {
     "compileOnly"("org.apache.sling:org.apache.sling.jcr.api:2.4.0")
     "compileOnly"("org.apache.sling:org.apache.sling.models.api:1.3.2")
     "compileOnly"("com.google.code.gson:gson:2.3")
-//    "compileOnly"("joda-time:joda-time:2.9.1")
 
     implementation(kotlin("stdlib-jdk8"))
 }
