@@ -66,7 +66,7 @@ Sample Component with Touch UI config dialog.
 Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations.
 
 ##### Versions
-* 1.0.1 - GAP and Gradle updated | build scripts migrated to Kotlin DSL | AEM 6.3
-* 1.0.0 - Initial version from 2018 | build scripts in Groovy DSL | AEM 6.3
+* [1.0.1](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/1.0.1/README.md) - GAP and Gradle updated | build scripts migrated to Kotlin DSL | AEM 6.3
+* [1.0.0](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/1.0.0/README.md) - Initial version from 2018 | build scripts in Groovy DSL | AEM 6.3
 
 ##### Project structure generated from [gradle-aem-single](https://github.com/Cognifide/gradle-aem-single) with help from [gradle-fork-plugin](https://github.com/neva-dev/gradle-fork-plugin)
