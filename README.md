@@ -5,7 +5,7 @@
 This project will help you learn Kotlin programming language. 
 You will find examples of common AEM developer tasks all written in both Java and Kotlin.
 
-### Deploy on AEM (supported versions listed (here)[#versions] )
+### Deploy on AEM (supported versions listed [here](/#versions) )
 
 If you like to run it just type `./gradlew` from root folder or use provided `Build and Deploy` build for IntelliJ IDE
 
