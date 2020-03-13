@@ -65,7 +65,7 @@ Simple `Sling Model` with property and service `injection`. Learn how to inject 
 Sample Component with Touch UI config dialog. 
 Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations.
 
-##### Versions
+### Versions
 * [1.0.1](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/1.0.1/README.md) - GAP and Gradle updated | build scripts migrated to Kotlin DSL | AEM 6.3
 * [1.0.0](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/1.0.0/README.md) - Initial version from 2018 | build scripts in Groovy DSL | AEM 6.3
 
