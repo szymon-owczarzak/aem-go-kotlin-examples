@@ -5,7 +5,7 @@
 This project will help you learn Kotlin programming language. 
 You will find examples of common AEM developer tasks all written in both Java and Kotlin.
 
-### Deploy on AEM (supported versions listed [here](/#versions) )
+### Deploy on AEM (supported versions listed [here](/#Versions) )
 
 If you like to run it just type `./gradlew` from root folder or use provided `Build and Deploy` build for IntelliJ IDE
 
@@ -65,6 +65,8 @@ Simple `Sling Model` with property and service `injection`. Learn how to inject 
 Sample Component with Touch UI config dialog. 
 Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations.
 
-##### Developed and tested on `AEM 6.4`
+##### Versions
+* 1.0.1 - GAP and Gradle updated | build scripts migrated to Kotlin DSL | AEM 6.3
+* 1.0.0 - Initial version from 2018 | build scripts in Groovy DSL | AEM 6.3
 
 ##### Project structure generated from [gradle-aem-single](https://github.com/Cognifide/gradle-aem-single) with help from [gradle-fork-plugin](https://github.com/neva-dev/gradle-fork-plugin)
