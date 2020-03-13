@@ -34,7 +34,7 @@ class ConfigurableServiceImpl : ConfigurableService {
             @get:AttributeDefinition(
                     name = "Text to be replaced",
                     description = "Example: boo:far all boo will be replaced with far"
-            ) val replacements: Array<String> = arrayOf("boo:far")
+            ) val replacements: Array<String> = ["boo:far"]
     )
 
     private lateinit var config: Config
@@ -49,8 +49,8 @@ class ConfigurableServiceImpl : ConfigurableService {
 
     override fun getReplacements(): Map<String, String> {
         return config.replacements.toList()
-                .map { it -> it.split(":") }
-                .filter { it -> it.size == 2 }
+                .map { it.split(":") }
+                .filter { it.size == 2 }
                 .associateBy({ it[0] }, { it[1] })
     }
 

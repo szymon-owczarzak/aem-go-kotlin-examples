@@ -26,8 +26,8 @@ import javax.servlet.Servlet
  *   More: https://sling.apache.org/documentation/the-sling-engine/servlets.html
  */
 @Component(
-        service = arrayOf(Servlet::class),
-        property = arrayOf("sling.servlet.paths=/bin/kotlin/hello")
+        service = [Servlet::class],
+        property = ["sling.servlet.paths=/bin/kotlin/hello"]
 )
 class SimpleServlet : SlingAllMethodsServlet() {
 

@@ -1,5 +1,6 @@
 .gradle
 /build/
+/buildSrc/build/
 .idea
 !.idea/runConfigurations/Build_and_Deploy.xml
 
@@ -14,3 +15,4 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+/src/aem/package/OAKPAL_OPEAR/nodetypes.cnd

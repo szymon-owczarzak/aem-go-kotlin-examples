@@ -13,11 +13,8 @@ import javax.servlet.*
  * Sling Filter for decorating components with additional classes
  */
 @Component(
-        service = arrayOf(Filter::class),
-        property = arrayOf(
-                "sling.filter.scope=COMPONENT",
-                "${Constants.SERVICE_RANKING}:Integer=${Integer.MAX_VALUE - 2}"
-        )
+        service = [Filter::class],
+        property = ["sling.filter.scope=COMPONENT", "${Constants.SERVICE_RANKING}:Integer=${Integer.MAX_VALUE - 2}"]
 )
 class ComponentDecoratorFilter : Filter {
 

@@ -21,7 +21,7 @@
                 type="h2"/>
             <sample
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="aem-go-kotlin-examples/components/sample"
+                sling:resourceType="gokotlin/components/sample"
                 textfield="Hello World I'm Sample component"
                 numberfield="1981"/>
         </root>
