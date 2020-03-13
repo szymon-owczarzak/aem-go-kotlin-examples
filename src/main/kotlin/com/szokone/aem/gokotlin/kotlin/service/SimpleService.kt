@@ -7,7 +7,7 @@ import org.osgi.service.component.annotations.Component
  * Simple OSGi Component registered as Service
  */
 @Component(
-        service = arrayOf(SimpleService::class)
+        service = [SimpleService::class]
 )
 class SimpleService {
 

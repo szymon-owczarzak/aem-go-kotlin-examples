@@ -8,7 +8,7 @@ import javax.annotation.PostConstruct
 import javax.inject.Inject
 import javax.inject.Named
 
-@Model(adaptables = arrayOf(Resource::class), defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+@Model(adaptables = [Resource::class], defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 class SampleModel {
 
     // NOTE: Use this approach when injecting objects like String...

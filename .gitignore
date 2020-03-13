@@ -1,5 +1,6 @@
 .gradle
 /build/
+/buildSrc/build/
 .idea
 !.idea/runConfigurations/Build_and_Deploy.xml
 
