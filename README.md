@@ -9,16 +9,16 @@ You will find examples of common AEM developer tasks all written in both Java an
 
 ## Prerequisites
 
-### Existing AEM instance
+#### For existing AEM instance
 Local **AEM author 6.5.8** instance running on `http://localhost:4502`  
 (*) Can be changed in `instance.local-author.httpUrl` prop in `gradle.user.properties`
 
-### New AEM instance
+#### For new AEM instance
 Put `cq-quickstart-6.5.0.jar`, `license.properties`, `aem-service-pkg-6.5.8.zip` 
 inside `<project_root>/instance/` folder and run `gradlew instanceUp`.  
 G.A.P. will create and start AEM author instance for you (this will take a few minutes).
 
-### Adding Publish instance (Optional)
+#### Adding Publish instance (Optional)
 Set `true` on `instance.local-publish.enabled` prop in `gradle.user.properties`
 
 ---
