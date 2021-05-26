@@ -27,7 +27,7 @@ public class SampleModel {
 
     @PostConstruct
     public void init() {
-        calculatedValue = service.getReplacements().toString() + " | " + textfield + " | " + numberfield  + " | " + checkbox;
+        calculatedValue = service.getReplacements().toString() + " | " + textfield + " | " + numberfield + " | " + checkbox;
     }
 
     public String getTextfield() {

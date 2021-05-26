@@ -13,8 +13,8 @@ import javax.servlet.*
  * Sling Filter for decorating components with additional classes
  */
 @Component(
-        service = [Filter::class],
-        property = ["sling.filter.scope=COMPONENT", "${Constants.SERVICE_RANKING}:Integer=${Integer.MAX_VALUE - 2}"]
+    service = [Filter::class],
+    property = ["sling.filter.scope=COMPONENT", "${Constants.SERVICE_RANKING}:Integer=${Integer.MAX_VALUE - 2}"]
 )
 class ComponentDecoratorFilter : Filter {
 
@@ -27,7 +27,11 @@ class ComponentDecoratorFilter : Filter {
 
         // NOTE: in real-life project make sure that your decorator touches only places that it should
         // be aware of the performance drop when badly implemented use resource type as a filter
-        if (service.isEnabled() && StringUtils.startsWith(req.resource.path, "/content/experience-fragments/go-kotlin")) {
+        if (service.isEnabled() && StringUtils.startsWith(
+                req.resource.path,
+                "/content/experience-fragments/go-kotlin"
+            )
+        ) {
             ComponentDecoratorProcessor(req, res, chain, service).process()
         } else {
             chain?.doFilter(request, response)

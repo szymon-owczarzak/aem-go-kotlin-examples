@@ -11,10 +11,12 @@ import java.io.StringWriter
 import javax.servlet.FilterChain
 
 // NOTE: In Kotlin you can create class variables directly in default constructor
-class ComponentDecoratorProcessor(private val request: SlingHttpServletRequest,
-                                  private val response: SlingHttpServletResponse,
-                                  private val chain: FilterChain?,
-                                  private val service: ConfigurableService) : SlingHttpServletResponseWrapper(response) {
+class ComponentDecoratorProcessor(
+    private val request: SlingHttpServletRequest,
+    private val response: SlingHttpServletResponse,
+    private val chain: FilterChain?,
+    private val service: ConfigurableService
+) : SlingHttpServletResponseWrapper(response) {
 
     private var sw: StringWriter? = null
 

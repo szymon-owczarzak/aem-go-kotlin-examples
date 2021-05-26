@@ -13,28 +13,28 @@ import org.osgi.service.metatype.annotations.ObjectClassDefinition
  * http://localhost:4502/system/console/configMgr
  */
 @Component(
-        immediate = true,
-        service = arrayOf(ConfigurableService::class)
+    immediate = true,
+    service = arrayOf(ConfigurableService::class)
 )
 @Designate(
-        ocd = ConfigurableServiceImpl.Config::class
+    ocd = ConfigurableServiceImpl.Config::class
 )
 class ConfigurableServiceImpl : ConfigurableService {
 
     @ObjectClassDefinition(
-            name = "2 Component Decorator Config Kotlin",
-            description = "Optional configuration description here"
+        name = "2 Component Decorator Config Kotlin",
+        description = "Optional configuration description here"
     )
     annotation class Config(
-            @get:AttributeDefinition(
-                    name = "Enable",
-                    description = "If selected tag decorator will be turned on"
-            ) val enabled: Boolean = false,
+        @get:AttributeDefinition(
+            name = "Enable",
+            description = "If selected tag decorator will be turned on"
+        ) val enabled: Boolean = false,
 
-            @get:AttributeDefinition(
-                    name = "Text to be replaced",
-                    description = "Example: boo:far all boo will be replaced with far"
-            ) val replacements: Array<String> = ["boo:far"]
+        @get:AttributeDefinition(
+            name = "Text to be replaced",
+            description = "Example: boo:far all boo will be replaced with far"
+        ) val replacements: Array<String> = ["boo:far"]
     )
 
     private lateinit var config: Config
@@ -49,9 +49,9 @@ class ConfigurableServiceImpl : ConfigurableService {
 
     override fun getReplacements(): Map<String, String> {
         return config.replacements.toList()
-                .map { it.split(":") }
-                .filter { it.size == 2 }
-                .associateBy({ it[0] }, { it[1] })
+            .map { it.split(":") }
+            .filter { it.size == 2 }
+            .associateBy({ it[0] }, { it[1] })
     }
 
 }

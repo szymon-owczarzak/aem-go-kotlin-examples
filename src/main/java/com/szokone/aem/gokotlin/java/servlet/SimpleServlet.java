@@ -2,18 +2,15 @@ package com.szokone.aem.gokotlin.java.servlet;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.net.MediaType;
-
-import java.io.IOException;
-import javax.servlet.Servlet;
-
 import com.szokone.aem.gokotlin.java.service.SimpleService;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.SlingHttpServletResponse;
-import org.apache.sling.api.servlets.HttpConstants;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
-import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
+
+import javax.servlet.Servlet;
+import java.io.IOException;
 
 /**
  * OSGi component registered as Sling Servlet
