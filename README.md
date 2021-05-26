@@ -5,9 +5,25 @@
 This project will help you learn Kotlin programming language. 
 You will find examples of common AEM developer tasks all written in both Java and Kotlin.
 
+### Prerequisites
+
+#### Existing AEM instance
+Local **AEM author 6.5.8** instance running on `http://localhost:4502`  
+(*) Can be changed in `instance.local-author.httpUrl` prop in `gradle.user.properties`
+
+#### New AEM instance
+Put `cq-quickstart-6.5.0.jar`, `license.properties`, `aem-service-pkg-6.5.8.zip` 
+inside `<project_root>/instance/` folder and run `gradlew instanceUp`.  
+G.A.P. will create and start AEM author instance for you (this will take a few minutes).
+
+#### Adding Publish instance (Optional)
+Set `true` on `instance.local-publish.enabled` prop in `gradle.user.properties`
+
 ### Deploy on AEM 6.5.8 
 
-If you like to run it just type `./gradlew` from root folder or use provided `Build and Deploy` build for IntelliJ IDE
+If you like to run it just type `gradlew` from root folder or use provided `package deploy` build for IntelliJ IDE
+(*) Build is checking if `org.apache.sling.api ver. 2.22.0` is available on the instance to ensure deployment on AEM 6.5.8 
+this can be disabled in `build.gradle.kts`
 
 ### Content
 
