@@ -1,15 +1,17 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Build and Deploy" type="GradleRunConfiguration" factoryName="Gradle" singleton="true">
+  <configuration default="false" name="instance await" type="GradleRunConfiguration" factoryName="Gradle">
     <ExternalSystemSettings>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
       <option name="externalSystemIdString" value="GRADLE" />
-      <option name="scriptParameters" value="" />
+      <option name="scriptParameters" value="--info --stacktrace" />
       <option name="taskDescriptions">
         <list />
       </option>
       <option name="taskNames">
-        <list />
+        <list>
+          <option value="instanceAwait" />
+        </list>
       </option>
       <option name="vmOptions" value="" />
     </ExternalSystemSettings>
