@@ -1,0 +1,55 @@
+# === Project specific configuration ===
+webpack.mode={{webpackMode}}
+test.browser={{testBrowser}}
+
+release.repository={{releaseRepository}}
+release.user={{releaseUser}}
+release.password={{releasePassword}}
+
+# === GAP configuration ===
+
+notifier.enabled={{notifierEnabled}}
+
+fileTransfer.user={{companyUser}}
+fileTransfer.password={{companyPassword}}
+fileTransfer.domain={{companyDomain}}
+
+package.validator.enabled={{packageValidatorEnabled}}
+package.bundleTest={{packageBundleTest}}
+package.nestedValidation={{packageNestedValidation}}
+package.manager.deployAvoidance={{packageDeployAvoidance}}
+{% if packageDamAssetToggle == 'true' %}
+package.manager.workflowToggle=[dam_asset=false]
+{% endif %}
+
+instance.provision.enabled={{instanceProvisionEnabled}}
+instance.provision.deployPackage.strict={{instanceProvisionDeployPackageStrict}}
+
+instance.check.help.enabled={{ instanceCheckHelpEnabled }}
+instance.check.bundles.enabled={{ instanceCheckBundlesEnabled }}
+instance.check.installer.enabled={{ instanceCheckInstallerEnabled }}
+instance.check.events.enabled={{ instanceCheckEventsEnabled }}
+instance.check.components.enabled={{ instanceCheckComponentsEnabled }}
+
+instance.local-author.enabled={{instanceAuthorEnabled}}
+instance.local-author.httpUrl={{instanceAuthorHttpUrl}}
+instance.local-author.type={{instanceType}}
+instance.local-author.runModes={{localInstanceRunModes}}
+instance.local-author.jvmOpts={{localInstanceJvmOpts}}
+instance.local-author.openPath={{localInstanceOpenAuthorPath}}
+
+instance.local-publish.enabled={{instancePublishEnabled}}
+instance.local-publish.httpUrl={{instancePublishHttpUrl}}
+instance.local-publish.type={{instanceType}}
+instance.local-publish.runModes={{localInstanceRunModes}}
+instance.local-publish.jvmOpt={{localInstanceJvmOpts}}
+instance.local-publish.openPath={{localInstanceOpenPublishPath}}
+
+{% if instanceType == 'local' %}
+localInstance.source={{ localInstanceSource }}
+localInstance.quickstart.jarUrl={{ localInstanceQuickstartJarUri }}
+localInstance.quickstart.licenseUrl={{ localInstanceQuickstartLicenseUri }}
+localInstance.backup.uploadUrl={{ localInstanceBackupUploadUri}}
+localInstance.backup.downloadUrl={{ localInstanceBackupDownloadUri }}
+localInstance.openMode={{ localInstanceOpenMode }}
+{% endif %}

@@ -5,7 +5,7 @@
 This project will help you learn Kotlin programming language. 
 You will find examples of common AEM developer tasks all written in both Java and Kotlin.
 
-### Deploy on AEM 6.4 
+### Deploy on AEM 6.5.8 
 
 If you like to run it just type `./gradlew` from root folder or use provided `Build and Deploy` build for IntelliJ IDE
 
@@ -63,8 +63,16 @@ Simple `Sling Model` with property and service `injection`. Learn how to inject 
 8. `Sample Component`
 [path](src/main/content/jcr_root/apps/aem-go-kotlin-examples/components/sample)  
 Sample Component with Touch UI config dialog. 
-Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations.
+Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations. Links: 
+[Java](http://localhost:4502/content/experience-fragments/go-kotlin/master.java.html)
+   |
+[Kotlin](http://localhost:4502/content/experience-fragments/go-kotlin/master.kotlin.html)
+   
+##### Developed and tested on `AEM 6.5.8`
 
-##### Developed and tested on `AEM 6.4`
+### Versions
+* [6.5.8](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/6.5.8/README.md) - Project recreated for the newer GAP | migrated to AEM 6.5.8
+* [1.0.1](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/1.0.1/README.md) - GAP and Gradle updated | build scripts migrated to Kotlin DSL | AEM 6.3
+* [1.0.0](https://github.com/szymon-owczarzak/aem-go-kotlin-examples/blob/1.0.0/README.md) - Initial version from 2018 | build scripts in Groovy DSL | AEM 6.3
 
 ##### Project structure generated from [gradle-aem-single](https://github.com/Cognifide/gradle-aem-single) with help from [gradle-fork-plugin](https://github.com/neva-dev/gradle-fork-plugin)
