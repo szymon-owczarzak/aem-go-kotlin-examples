@@ -82,8 +82,7 @@ Meet `elvis operator` and `fields definition directly in constructor` when writi
 [Kotlin](/src/main/kotlin/com/szokone/aem/gokotlin/kotlin/model/SampleModel.kt)  
 Simple `Sling Model` with property and service `injection`. Learn how to inject primitive types in Kotlin.
 
-8. `Sample Component`
-[path](src/main/content/jcr_root/apps/aem-go-kotlin-examples/components/sample)  
+8. `Sample Component` [path](src/main/content/jcr_root/apps/gokotlin/components/sample)  
 Sample Component with Touch UI config dialog. 
 Add selector `java` or `kotlin` and switch from `JSP` to `HTL` with different model implementations. Links: 
 [Java](http://localhost:4502/content/experience-fragments/go-kotlin/master.java.html)
