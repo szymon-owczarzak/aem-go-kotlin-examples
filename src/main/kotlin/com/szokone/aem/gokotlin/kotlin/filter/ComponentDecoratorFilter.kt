@@ -45,5 +45,4 @@ class ComponentDecoratorFilter : Filter {
     override fun destroy() {
         // Searching, Seek and destroy
     }
-
 }

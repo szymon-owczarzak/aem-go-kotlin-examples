@@ -30,7 +30,6 @@ class ComponentDecoratorProcessor(
         response.writer.write(html)
     }
 
-
     @Throws(IOException::class)
     override fun getWriter(): PrintWriter {
         sw = sw ?: StringWriter()

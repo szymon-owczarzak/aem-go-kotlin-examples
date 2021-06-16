@@ -53,5 +53,4 @@ class ConfigurableServiceImpl : ConfigurableService {
             .filter { it.size == 2 }
             .associateBy({ it[0] }, { it[1] })
     }
-
 }

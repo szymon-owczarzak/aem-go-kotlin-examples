@@ -5,6 +5,7 @@ plugins {
     id("com.cognifide.aem.bundle")
     id("com.cognifide.aem.package")
     id("com.cognifide.aem.package.sync")
+    id("io.gitlab.arturbosch.detekt") version "1.17.1"
 }
 
 apply(from = "gradle/fork/props.gradle.kts")
@@ -20,6 +21,8 @@ repositories {
 }
 
 dependencies {
+    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.17.1")
+
     compileOnly("org.osgi:osgi.cmpn:6.0.0")
     compileOnly("org.osgi:org.osgi.core:6.0.0")
     compileOnly("javax.servlet:servlet-api:2.5")
@@ -55,6 +58,13 @@ aem {
             deployPackage("org.jetbrains.kotlin:kotlin-osgi-bundle:1.5.0")
         }
     }
+}
+
+detekt {
+    input = files("src/main/kotlin")
+    config.from(file("detekt.yml"))
+    parallel = true
+    autoCorrect = true
 }
 
 tasks {

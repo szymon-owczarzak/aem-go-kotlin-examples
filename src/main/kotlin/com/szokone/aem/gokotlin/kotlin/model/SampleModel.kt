@@ -31,6 +31,6 @@ class SampleModel {
 
     @PostConstruct
     fun init() {
-        calculatedValue = "${service.getReplacements()} | ${textfield} | ${numberfield} | ${checkbox}"
+        calculatedValue = "${service.getReplacements()} | $textfield | $numberfield | $checkbox"
     }
 }
