@@ -14,6 +14,8 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           architecture: x64
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - name: Run Detekt
         run: ./gradlew :detekt
       - name: Run JUnit
