@@ -2,11 +2,10 @@ repositories {
     mavenLocal()
     jcenter()
     gradlePluginPortal()
-    maven("http://dl.bintray.com/cognifide/maven-public")
-    maven("https://dl.bintray.com/neva-dev/maven-public")
 }
 
 dependencies {
-    implementation("com.cognifide.gradle:aem-plugin:11.0.11")
-    implementation("org.apache.sling:org.apache.sling.caconfig.bnd-plugin:1.0.2")
+    implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.0")
+    implementation("com.cognifide.gradle:aem-plugin:14.2.9")
+    implementation("com.neva.gradle:fork-plugin:5.0.5")
 }

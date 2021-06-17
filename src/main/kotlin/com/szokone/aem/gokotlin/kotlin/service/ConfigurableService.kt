@@ -14,5 +14,4 @@ interface ConfigurableService {
      * @return map of text in component to replace
      */
     fun getReplacements(): Map<String, String>
-
 }
